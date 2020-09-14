@@ -1,38 +1,93 @@
 .App {
-  text-align: center;
+    background-image: url("./assets/background.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.add-task-container {
+    /* border-radius: 20px; */
+    background-color: #fff;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 50px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.55);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.input-task-container {
+    margin-top: 20px;
+    display: flex;
 }
 
-.App-link {
-  color: #61dafb;
+.input-task {
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    font-size: 18px;
+}
+.input-task:focus {
+    outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.send-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #036cec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.send-icon:hover {
+    opacity: 0.8;
+}
+
+.task-list {
+    background-color: #fff;
+    padding: 20px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.task-checkbox {
+    margin-right: 10px;
+}
+
+.task-checkbox input {
+    width: 20px;
+    height: 20px;
+}
+
+.quote {
+    font-size: 24px;
+    color: #fff;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.time {
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: bold;
 }
